@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: langgraph-test2025092402-gitops-repository
+spec:
+  url: https://github.com/fpetk-rolling-demo/langgraph-test2025092402-gitops

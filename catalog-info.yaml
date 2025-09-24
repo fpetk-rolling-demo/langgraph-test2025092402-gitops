@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: langgraph-test2025092402-gitops
+  description: This is GitOps manifest for langgraph-test2025092402   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    # ArgoCD apps from this template used rhtap-gitops as the grouping
+    argocd/app-selector: rhtap/gitops=langgraph-test2025092402
+    janus-idp.io/tekton: langgraph-test2025092402 
+    backstage.io/kubernetes-id: langgraph-test2025092402 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:default/theofanispetkos 
+  lifecycle: experimental  
